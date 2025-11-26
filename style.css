@@ -9,34 +9,44 @@ body {
 /* Main Header */
 .main-header {
   background: #313644;
-  padding: 30px 0 0 0;
+  padding-bottom: 0;
+  text-align: left;
   position: relative;
-  text-align: center;
-  overflow: hidden;
-}
-.header-bg {
-  width: 100%;
-}
-.company-name {
-  font-size: 2.2em;
-  font-weight: 700;
-  color: #01889f;
-  margin-bottom: 0;
-  font-family: 'Inter', sans-serif;
-  letter-spacing: 0.5px;
-  padding-top: 24px;
-}
-.arcs-top {
-  margin: 0 auto;
-  width: 350px;
-  max-width: 90vw;
-}
-.arcs-below {
-  margin: -25px auto 0 auto;
-  width: 350px;
-  max-width: 90vw;
 }
 
+/* Header content: logo left, name right */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 35px 42px 25px 42px;
+}
+
+.header-logo {
+  height: 66px;
+  width: 66px;
+  margin-right: 18px;
+  flex-shrink: 0;
+}
+
+.company-name {
+  font-size: 2em;
+  font-weight: 700;
+  color: #01889f;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.header-accent {
+  /* Modern accent: slim turquoise bar at bottom of header */
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, #01889f 0%, #7ad1e6 100%);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Section generic styles */
 .section {
   background: #fff;
   border-radius: 16px;
@@ -45,6 +55,8 @@ body {
   max-width: 900px;
   margin: 32px auto 0 auto;
 }
+
+/* About */
 .section-title {
   font-size: 1.35em;
   font-weight: 700;
@@ -58,15 +70,13 @@ body {
   margin: 6px 0 20px 0;
   border-radius: 2px;
 }
-
-/* About Section */
 .section.about p {
   font-size: 1.08em;
   color: #333;
   margin-top: 7px;
 }
 
-/* Projects Section */
+/* Projects */
 .project-cards {
   display: flex;
   gap: 20px;
@@ -92,13 +102,13 @@ body {
   font-size: 1em;
 }
 
-/* Contact Section Centered */
+/* Contact: now same width as .section */
 .section.contact {
-  max-width: 480px;
-  margin: 42px auto 24px auto;
+  max-width: 900px;
+  margin: 32px auto 30px auto;
 }
 
-/* Contact Info Rows */
+/* Contact Rows/Icons */
 .contact-info {
   margin-top: 16px;
 }
@@ -180,16 +190,23 @@ body {
     padding: 24px 12px;
     max-width: 98vw;
   }
-  .arcs-top, .arcs-below {
-    width: 98vw;
-    min-width: 120px;
-  }
   .company-name {
-    font-size: 1.3em;
-    padding-top: 16px;
+    font-size: 1.1em;
+    padding-top: 2px;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 25px 12px 16px 12px;
+  }
+  .header-logo {
+    height: 52px;
+    width: 52px;
+    margin-right: 0;
+    margin-bottom: 6px;
   }
   .section.contact {
-    min-width: 0;
     max-width: 99vw;
     padding: 12px 6px;
   }
