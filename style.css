@@ -17,11 +17,11 @@
   height: 200px;
   width: 200px;
   margin-right: 0;
-  margin-bottom: 9px;
+  margin-bottom: 2px;
 }
 
 .company-name {
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: 700;
   color: #01889f;
   font-family: 'Inter', sans-serif;
