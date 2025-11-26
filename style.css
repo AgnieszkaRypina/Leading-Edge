@@ -170,6 +170,15 @@
   font-size: 0.9em;
 }
 
+/* LinkedIn Icon Style */
+.linkedin-icon {
+  background: #0077b5;
+  transition: background 0.18s;
+}
+.linkedin-icon:hover {
+  background: #005984;
+}
+
 /* Footer */
 .footer {
   text-align: center;
