@@ -51,15 +51,15 @@
 
 /* About */
 .section-title {
-  font-size: 2em;
-  font-weight: 900;
-  color: #313644; /*kolor tekstu ,,O mnie" */
+  font-size: 1.8em;
+  font-weight: 800;
+  color: #313644; /*kolor tekstu ,,O mnie"... */
   margin-bottom: 0;
 }
 .line {
   background: #7ad1e6; /*kolor linii*/
   height: 3px;
-  width: 70px;
+  width: 100px;
   margin: 6px 0 20px 0;
   border-radius: 2px;
 }
