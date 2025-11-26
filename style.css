@@ -10,8 +10,8 @@
   align-items: center;            /* wyśrodkowanie w pionie */
   justify-content: center;        /* wyśrodkowanie w poziomie całego kontenera */
   flex-direction: row;            /* układ elementów w wierszu (jeden obok drugiego) */
-  gap: 100px;                      /* odstęp między elementami (np. logo a nazwą) */
-  padding: 35px 42px 35px 20px;   /* pozostaje tak samo, wewnętrzny odstęp od krawędzi */
+  gap: 300px;                      /* odstęp między elementami (np. logo a nazwą) */
+  padding: 35px 42px 35px 5px;   /* pozostaje tak samo, wewnętrzny odstęp od krawędzi */
 }
 
 
