@@ -1,112 +1,91 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <style>
-    :root {
-      --bg: #f4f4f7;
-      --card-bg: #ffffff;
-      --text: #1f1f1f;
-      --primary: #4a63e7;
-      --radius: 20px;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Inter", sans-serif;
-    }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    header {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.8;
-    }
-    .section {
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 25px;
-      text-align: center;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-    .card {
-      background: var(--card-bg);
-      padding: 25px;
-      border-radius: var(--radius);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      transition: transform .3s ease, box-shadow .3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 1.4rem;
-    }
-    .card p {
-      opacity: 0.8;
-      font-size: 0.95rem;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 0;
-      opacity: 0.7;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Leading Edge Karol Niewiadomski</h1>
-    <p>Owner </p>
+  <!-- Nagłówek -->
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Twoje Imię</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">O mnie</a></li>
+          <li><a href="#projects">Projekty</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-arc"></div>
   </header>
 
-  <section class="section">
-    <h2 class="section-title">Projekty</h2>
-    <div class="projects">
-
-      <div class="card">
-        <h3>Projekt 1</h3>
-        <p>Chciałabym coś tu zmienić, sprawdzam tylko czy działa.</p>
+  <!-- Sekcja O mnie -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>O mnie</h2>
+      <div class="line"></div>
+      <p>Cześć! Jestem [Twoje imię] i zajmuję się tworzeniem stron internetowych oraz projektowaniem interfejsów. Tworzę responsywne, nowoczesne i estetyczne projekty.</p>
+      <div class="icons">
+        <span>💻</span>
+        <span>🎨</span>
+        <span>⚡</span>
       </div>
-
-      <div class="card">
-        <h3>Projekt 2</h3>
-        <p> Tutaj należy coś napisać.</p>
-      </div>
-
-      <div class="card">
-        <h3>Projekt 3</h3>
-        <p>System, który rozwiązuje realne problemy użytkowników.</p>
-      </div>
-
     </div>
   </section>
 
-  <footer>
-    © 2025 Leading Edge — wszystkie prawa zastrzeżone
+  <!-- Sekcja Projekty -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projekty</h2>
+      <div class="line"></div>
+      <div class="project-cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Projekt 1">
+          <h3>Projekt 1</h3>
+          <p>Krótki opis projektu.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Projekt 2">
+          <h3>Projekt 2</h3>
+          <p>Krótki opis projektu.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Projekt 3">
+          <h3>Projekt 3</h3>
+          <p>Krótki opis projektu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja Kontakt -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <div class="line"></div>
+      <div class="contact-content">
+        <div class="contact-icons">
+          <p>📧 email@example.com</p>
+          <p>📞 +48 123 456 789</p>
+          <p>🌐 github.com/twojprofil</p>
+        </div>
+        <form>
+          <input type="text" placeholder="Imię" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Wiadomość" required></textarea>
+          <button type="submit">Wyślij</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stopka -->
+  <footer class="footer">
+    <p>&copy; 2025 Twoje Imię. Wszelkie prawa zastrzeżone.</p>
   </footer>
 </body>
 </html>
