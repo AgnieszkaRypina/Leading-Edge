@@ -10,8 +10,8 @@
   align-items: center;            /* wyśrodkowanie w pionie */
   justify-content: center;        /* wyśrodkowanie w poziomie całego kontenera */
   flex-direction: row;            /* układ elementów w wierszu (jeden obok drugiego) */
-  gap: 200px;                      /* odstęp między elementami (np. logo a nazwą) */
-  padding: 35px 42px 35px 8px;   /* pozostaje tak samo, wewnętrzny odstęp od krawędzi */
+  gap: 150px;                      /* odstęp między elementami (np. logo a nazwą) */
+  padding: 35px 42px 35px 5px;   /* pozostaje tak samo, wewnętrzny odstęp od krawędzi */
 }
 
 
@@ -23,8 +23,8 @@
 }
 
 .company-name {
-  font-size: 3.2em;
-  font-weight: 700;
+  font-size: 3em;
+  font-weight: 600;
   color: #01889f;
   font-family: 'Inter', sans-serif;
   letter-spacing: 1px;
@@ -43,7 +43,7 @@
 
 /* Section generic styles */
 .section {
-  background: #e7e7e7; /*kolor tła sekcji*/
+  background: #e6e9f0; /*kolor tła sekcji*/
   border-radius: 20px;
   box-shadow: 0 3px 22px #e0e3ef26;
   padding: 32px 36px;
@@ -79,7 +79,7 @@
   margin-top: 18px;
 }
 .card {
-  background: #e6e9f0; /* kolor ,,małego" boxa */
+  background: #b7b9c7; /* kolor ,,małego" boxa */
   border-radius: 12px;
   box-shadow: 0 2px 8px #e0e3ef22;
   padding: 22px 17px;
