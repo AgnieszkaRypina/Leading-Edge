@@ -3,34 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Leading Edge - Karol Niewiadomski</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="full.svg">
 </head>
 <body>
-  <!-- Nagłówek -->
-  <header class="header">
-    <div class="container">
-      <h1>Leading Edge Karol Niewiadomski</h1>
-      <p>Owner</p>
+  <!-- HEADER with accent graphic -->
+  <header class="header-accent">
+    <div class="left-header">
+      <h1 class="main-name">Karol Niewiadomski</h1>
+      <div class="name-underline"></div>
+      <p class="owner-title">Owner</p>
+    </div>
+    <div class="right-header">
+      <!-- Accent SVG from your business card -->
+      <img src="full.svg" alt="LEADING EDGE Logo Graphic" class="logo-graphic">
     </div>
   </header>
 
-  <!-- Sekcja O mnie -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2 class="section-title">O mnie</h2>
-      <div class="line"></div>
-      <p>Cześć! </p>
-      <div class="icons">
-        <span>💻</span>
-        <span>🎨</span>
-        <span>⚡</span>
+  <!-- CONTACT section styled as on the card -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Kontakt</h2>
+    <div class="line"></div>
+    <div class="contact-info">
+      <div class="contact-row">
+        <span class="icon-circle">
+          <!-- Phone SVG icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M22,16.92v3a2,2,0,0,1-2.18,2A19.79,19.79,0,0,1,3.09,5.18,2,2,0,0,1,5,3h3A1,1,0,0,1,9,3.72l.44,2.22a1,1,0,0,1-.23.92L7.21,8.5a16,16,0,0,0,6.29,6.29l1.64-2a1,1,0,0,1,.92-.23l2.22.44A1,1,0,0,1,21,16Z"/></svg>
+        </span>
+        <span class="contact-text">+48 600 519 864</span>
+      </div>
+      <div class="contact-row">
+        <span class="icon-circle">
+          <!-- Email SVG icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M12,13a1,1,0,0,1-.6-.2L3,6.71A1,1,0,0,1,4,5h16a1,1,0,0,1,1,1.71l-8.4,6.09A1,1,0,0,1,12,13Zm8,2a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8.41l8,5.8,8-5.8Z"/></svg>
+        </span>
+        <span class="contact-text">karolni@leadingedge.engineering</span>
+      </div>
+      <div class="contact-row">
+        <span class="icon-circle">
+          <!-- Location SVG icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </span>
+        <span class="contact-text">ul. Powstańców Śląskich 124, lok. 92,<br>01-466 Warsaw, Poland</span>
       </div>
     </div>
   </section>
 
-  <!-- Sekcja Projekty -->
+  <!-- ABOUT section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">O mnie</h2>
+      <div class="line"></div>
+      <p>Cześć! Jestem programistą i właścicielem firmy Leading Edge, tworzę nowoczesne rozwiązania IT dopasowane do potrzeb biznesu.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
   <section id="projects" class="section projects">
     <div class="container">
       <h2 class="section-title">Projekty</h2>
@@ -52,29 +82,7 @@
     </div>
   </section>
 
-  <!-- Sekcja Kontakt -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2 class="section-title">Kontakt</h2>
-      <div class="line"></div>
-      <div class="contact-content">
-        <div class="contact-info">
-          <p>📧 karolni@leadingedge.engineering</p>
-          <p>📞 +48 600 519 864</p>
-          <p>🌐 github.com/twojprofil</p>
-          <p> ul. Powstańców Śląskich 124, lok. 92, 01-466 Warsaw, Poland</p>
-        </div>
-        <form>
-          <input type="text" placeholder="Imię" required>
-          <input type="email" placeholder="Email" required>
-          <textarea placeholder="Wiadomość" required></textarea>
-          <button type="submit">Wyślij</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stopka -->
+  <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2025 Leading Edge — wszystkie prawa zastrzeżone</p>
   </footer>
