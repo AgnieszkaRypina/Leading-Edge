@@ -41,7 +41,7 @@
 
 /* Section generic styles */
 .section {
-  background: #d9d9d9;
+  background: ##7ad1e6;
   border-radius: 16px;
   box-shadow: 0 3px 22px #e0e3ef26;
   padding: 32px 36px;
@@ -57,7 +57,7 @@
   margin-bottom: 0;
 }
 .line {
-  background: #7ad1e6;
+  background: #d9d9d9;
   height: 3px;
   width: 70px;
   margin: 6px 0 20px 0;
