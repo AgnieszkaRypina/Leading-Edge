@@ -10,8 +10,8 @@
   align-items: center;            /* wyśrodkowanie w pionie */
   justify-content: center;        /* wyśrodkowanie w poziomie całego kontenera */
   flex-direction: row;            /* układ elementów w wierszu (jeden obok drugiego) */
-  gap: 20px;                      /* odstęp między elementami (np. logo a nazwą) */
-  padding: 55px 42px 35px 42px;   /* pozostaje tak samo, wewnętrzny odstęp od krawędzi */
+  gap: 100px;                      /* odstęp między elementami (np. logo a nazwą) */
+  padding: 35px 42px 35px 20px;   /* pozostaje tak samo, wewnętrzny odstęp od krawędzi */
 }
 
 
@@ -61,7 +61,7 @@
 .line {
   background: #7ad1e6; /*kolor linii*/
   height: 3px;
-  width: 100px;
+  width: 700px;
   margin: 6px 0 20px 0;
   border-radius: 2px;
 }
