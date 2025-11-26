@@ -6,83 +6,92 @@
   <title>Leading Edge - Karol Niewiadomski</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="full.svg">
 </head>
 <body>
-  <!-- HEADER with accent graphic -->
-  <header class="header-accent">
-    <div class="left-header">
-      <h1 class="main-name">Karol Niewiadomski</h1>
-      <div class="name-underline"></div>
-      <p class="owner-title">Owner</p>
+  <!-- Header with arcs -->
+  <header class="main-header">
+    <div class="header-bg">
+      <h1 class="company-name">Leading Edge - Karol Niewiadomski</h1>
+      <div class="arcs-top">
+        <!-- Top arcs SVG -->
+        <svg width="350" height="60" viewBox="0 0 350 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,60 C80,20 270,70 350,10" stroke="#01889f" stroke-width="12" fill="none"/>
+          <path d="M0,50 C80,15 270,60 350,0" stroke="#fff" stroke-width="8" fill="none"/>
+        </svg>
+      </div>
     </div>
-    <div class="right-header">
-      <!-- Accent SVG from your business card -->
-      <img src="full.svg" alt="LEADING EDGE Logo Graphic" class="logo-graphic">
+    <div class="arcs-below">
+      <!-- Lower arcs SVG, turquoise and white -->
+      <svg width="350" height="40" viewBox="0 0 350 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,22 Q100,45 350,5" stroke="#01889f" stroke-width="12" fill="none"/>
+        <path d="M0,34 Q80,36 350,8" stroke="#fff" stroke-width="8" fill="none"/>
+      </svg>
     </div>
   </header>
 
-  <!-- CONTACT section styled as on the card -->
-  <section id="contact" class="contact-section">
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2 class="section-title">O mnie</h2>
+    <div class="line"></div>
+    <p>Cześć! Jestem Karol Niewiadomski, pasjonat nowoczesnych technologii oraz właściciel firmy Leading Edge. Zajmuję się tworzeniem zaawansowanych rozwiązań IT dla biznesu.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <h2 class="section-title">Projekty</h2>
+    <div class="line"></div>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Projekt 1</h3>
+        <p>Nowoczesny design, responsywność i wydajność.</p>
+      </div>
+      <div class="card">
+        <h3>Projekt 2</h3>
+        <p>Kolejny profesjonalny projekt zorientowany na jakość.</p>
+      </div>
+      <div class="card">
+        <h3>Projekt 3</h3>
+        <p>System, który rozwiązuje realne problemy użytkowników.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (centered at the bottom) -->
+  <section id="contact" class="section contact">
     <h2 class="section-title">Kontakt</h2>
     <div class="line"></div>
     <div class="contact-info">
       <div class="contact-row">
         <span class="icon-circle">
-          <!-- Phone SVG icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M22,16.92v3a2,2,0,0,1-2.18,2A19.79,19.79,0,0,1,3.09,5.18,2,2,0,0,1,5,3h3A1,1,0,0,1,9,3.72l.44,2.22a1,1,0,0,1-.23.92L7.21,8.5a16,16,0,0,0,6.29,6.29l1.64-2a1,1,0,0,1,.92-.23l2.22.44A1,1,0,0,1,21,16Z"/></svg>
         </span>
         <span class="contact-text">+48 600 519 864</span>
       </div>
       <div class="contact-row">
         <span class="icon-circle">
-          <!-- Email SVG icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M12,13a1,1,0,0,1-.6-.2L3,6.71A1,1,0,0,1,4,5h16a1,1,0,0,1,1,1.71l-8.4,6.09A1,1,0,0,1,12,13Zm8,2a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8.41l8,5.8,8-5.8Z"/></svg>
         </span>
         <span class="contact-text">karolni@leadingedge.engineering</span>
       </div>
       <div class="contact-row">
         <span class="icon-circle">
-          <!-- Location SVG icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
         </span>
         <span class="contact-text">ul. Powstańców Śląskich 124, lok. 92,<br>01-466 Warsaw, Poland</span>
       </div>
     </div>
-  </section>
-
-  <!-- ABOUT section -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2 class="section-title">O mnie</h2>
-      <div class="line"></div>
-      <p>Cześć! Jestem programistą i właścicielem firmy Leading Edge, tworzę nowoczesne rozwiązania IT dopasowane do potrzeb biznesu.</p>
+    <!-- Automatic message (contact) form using Formspree -->
+    <form class="contact-form" action="https://formspree.io/f/{your-form-id}" method="POST">
+      <input type="text" name="name" placeholder="Imię" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Wiadomość" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+    <div class="form-info">
+      <small>Formularz obsługiwany automatycznie przez Formspree</small>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section projects">
-    <div class="container">
-      <h2 class="section-title">Projekty</h2>
-      <div class="line"></div>
-      <div class="project-cards">
-        <div class="card">
-          <h3>Projekt 1</h3>
-          <p>Nowoczesny design, responsywność i wydajność.</p>
-        </div>
-        <div class="card">
-          <h3>Projekt 2</h3>
-          <p>Kolejny profesjonalny projekt zorientowany na jakość.</p>
-        </div>
-        <div class="card">
-          <h3>Projekt 3</h3>
-          <p>System, który rozwiązuje realne problemy użytkowników.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2025 Leading Edge — wszystkie prawa zastrzeżone</p>
   </footer>
